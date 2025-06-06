@@ -1,0 +1,151 @@
+/* Post Container */
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.write-post-container {
+  /* padding: 40px; */
+  max-height: 85%;
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+.post-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.visibility {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.prompt-text {
+  margin-left: auto;
+  font-size: 14px;
+  color: #777;
+}
+
+.post-textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  padding: 10px;
+  background: transparent;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+}
+
+.post-footer {
+  margin-top: 20px;
+  bottom: 10%;
+  display: flex;
+  flex: 1/4;
+  min-height: 80px;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-btn {
+  background: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-btn {
+  margin-left: auto;
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Category Popup */
+
+.category-popup {
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.category-modal {
+  position: fixed;
+  top: 50%;
+  
+  left: 27.5%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.category-option {
+  padding: 8px 10px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.category-option:hover {
+  background-color: #d9d9d9;
+}
+
+.close-modal {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import profile_img from '/src/assets/Vector.png';
 import {SideMenu} from "./components/SideMenu";
+import WritePostPage from "./pages/WritePostPage";
 import FeedPage from "@/pages/FeedPage";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -28,7 +29,8 @@ export default function   MainPageLayout() {
     <div className="min-h-screen flex items-center justify-center bg-gray-400 p-4">
       <div className="bg-[#e9f0ed] w-[85vw] h-[90vh] rounded-3xl shadow-xl flex overflow-hidden">
         <SideMenu navItems={navItems} ProfileImg={profile_img}/>
-          <FeedPage/>
+        <WritePostPage/>
+          {/* <FeedPage/> */}
         </div>
       </div>
   );
